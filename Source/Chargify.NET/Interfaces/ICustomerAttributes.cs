@@ -28,6 +28,7 @@
 //
 #endregion
 
+// ReSharper disable once CheckNamespace
 namespace ChargifyNET
 {
     #region Imports
@@ -96,5 +97,9 @@ namespace ChargifyNET
         /// The customers shipping country
         /// </summary>
         string ShippingCountry { get; set; }
+        /// <summary>
+        /// Get or Set the customer's tax exemption status
+        /// </summary>
+        bool TaxExempt { get; set; }
     }
 }

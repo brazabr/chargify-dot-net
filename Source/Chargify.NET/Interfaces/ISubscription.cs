@@ -28,6 +28,7 @@
 //
 #endregion
 
+// ReSharper disable once CheckNamespace
 namespace ChargifyNET
 {
     #region Imports
@@ -111,6 +112,10 @@ namespace ChargifyNET
         /// The 'parital' invoice state
         /// </summary>
         Partial,
+        /// <summary>
+        /// Subscription is 'paused', no further processing
+        /// </summary>
+        On_Hold,
         /// <summary>
         /// The 'unknown' subscription state, only internal to this wrapper
         /// </summary>
@@ -253,5 +258,10 @@ namespace ChargifyNET
         /// will be changed to at the next renewal.
         /// </summary>
         int NextProductId { get; }
+
+        /// <summary>
+        /// Referral code field
+        /// </summary>
+        string ReferralCode { get; }
     }
 }
